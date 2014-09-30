@@ -52,7 +52,7 @@ var homesDataService = (function () {
                 });
             },
 
-            localKey: 'codedhomes-new-homes',
+            localKey: 'homesurfer-new-homes',
 
             saveLocal: function (newHome) {
                 if (Modernizr.localstorage) {

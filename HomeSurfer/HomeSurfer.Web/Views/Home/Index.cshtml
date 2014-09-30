@@ -81,26 +81,26 @@
 }
 
 @section scripts {
-    <script>
-        $(function () {
+<script>
+    $(function () {
 
-            var
-                showOnlineLayout = function () {
-                    $('.offline').fadeOut(function () {
-                        $('.online').fadeIn();
-                    });
-                },
+        var
+            showOnlineLayout = function () {
+                $('.offline').fadeOut(function () {
+                    $('.online').fadeIn();
+                });
+            },
 
-                showOfflineLayout = function () {
-                    $('.online').fadeOut(function () {
-                        $('.offline').fadeIn();
-                    });
-                };
+            showOfflineLayout = function () {
+                $('.online').fadeOut(function () {
+                    $('.offline').fadeIn();
+                });
+            };
 
-            var offlineUtility = new OfflineUtility(showOnlineLayout, showOfflineLayout);
-        });
+        var offlineUtility = new OfflineUtility(showOnlineLayout, showOfflineLayout);
+    });
 
-    </script>
+</script>    
 }
 
 <div class="container">

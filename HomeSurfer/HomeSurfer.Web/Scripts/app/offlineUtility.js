@@ -115,7 +115,7 @@ var OfflineUtility = function (onlineCallback, offlineCallback, pollingUrl) {
     }
 
 };
-// */
+ 
 
 // ****************************************************************** //
 // The following version of OfflineUtility uses the native browser 
@@ -127,31 +127,30 @@ var OfflineUtility = function (onlineCallback, offlineCallback, pollingUrl) {
 // If this is not an issue for you then this version of OfflineUtility
 // may be a good choice for your application.
 // ****************************************************************** //
-/*
-var OfflineUtility = function(onlineCallback, offlineCallback) {
 
-    var
-        autoReloadOnCacheUpdate = function() {
-            window.applicationCache.swapCache();
-            location.reload();
-        };
+//var OfflineUtility = function(onlineCallback, offlineCallback) {
 
-    if (onlineCallback) {
-        $(window).on('online', onlineCallback);
-    }
+//    var
+//        autoReloadOnCacheUpdate = function() {
+//            window.applicationCache.swapCache();
+//            location.reload();
+//        };
 
-    if (offlineCallback) {
-        $(window).on('offline', offlineCallback);
-    }
+//    if (onlineCallback) {
+//        $(window).on('online', onlineCallback);
+//    }
 
-    if (window.applicationCache) {
-        $(window.applicationCache).on('updateready', autoReloadOnCacheUpdate);
-    }
+//    if (offlineCallback) {
+//        $(window).on('offline', offlineCallback);
+//    }
 
-    if (navigator.onLine) {
-        onlineCallback();
-    } else {
-        offlineCallback();
-    }
-};
-// */
+//    if (window.applicationCache) {
+//        $(window.applicationCache).on('updateready', autoReloadOnCacheUpdate);
+//    }
+
+//    if (navigator.onLine) {
+//        onlineCallback();
+//    } else {
+//        offlineCallback();
+//    }
+//};
