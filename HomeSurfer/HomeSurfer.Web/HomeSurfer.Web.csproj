@@ -320,6 +320,7 @@
     <Content Include="Scripts\lib\underscore.min.map" />
     <Content Include="Views\Homes\Index.cshtml" />
     <Content Include="Views\Homes\Home.cshtml" />
+    <Content Include="Views\Homes\Offline.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

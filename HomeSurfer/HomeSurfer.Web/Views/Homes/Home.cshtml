@@ -44,8 +44,8 @@
 
             var Home = function () {
                 this.id = ko.observable("@Model.Home.Id");
-                this.streetAddress = ko.observable("@Model.Home.Address1");
-                this.streetAddress2 = ko.observable("@Model.Home.Address2");
+                this.address1 = ko.observable("@Model.Home.Address1");
+                this.address2 = ko.observable("@Model.Home.Address2");
                 this.city = ko.observable("@Model.Home.City");
                 this.zipCode = ko.observable("@((Convert.ToInt32(Model.Home.ZipCode) > 0) ? Model.Home.ZipCode.ToString() : "")");
                 this.bedrooms = ko.observable("@Model.Home.BedRooms");
