@@ -1,9 +1,14 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-
+@if (ViewBag.IncludeManifest != null)
+{
+<text><html lang="en" manifest="/homes/manifest"></text>
+} else
+{
+<text><html lang="en"></text>
+}
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title :: Home Surfer</title>
+        <title>@ViewBag.Title :: HomeSurfer</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -25,19 +30,18 @@
     <body class="container-fluid">
         <header>
             <div class="row-fluid">
-                <div class="span6"><a href="/"><img alt="HomeSurfer" title="Home Surfer" src="/img/HomeSurferLogo.png" /></a></div>
-                <span>
-                    <span class="standout pull-right">
+                <div class="span6"><a href="/"><img alt="Home Surfer" title="Home Surfer" class="fancy" src="/img/home_surfer_small_logo.png" /></a></div>
+                <div class="span6">
+                    <div class="pull-right online standout">
                         @if (ViewBag.IncludeManifest != null)
                         {
                             @Html.ActionLink("Manage Account", "manage", "account")
-                        }
-                        else
+                        } else
                         {
                             @Html.Partial("_LoginPartial")
                         }
-                    </span>
-                </span>
+                    </div>
+                </div>
             </div>
         </header>
         <article>

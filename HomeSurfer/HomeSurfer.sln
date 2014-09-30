@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSurfer.Console", "HomeS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSurfer.Web", "HomeSurfer.Web\HomeSurfer.Web.csproj", "{653197BA-D5AB-4CF0-8DD4-37E45B7E1BE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSurfer.Admin", "HomeSurfer.Admin\HomeSurfer.Admin.csproj", "{5E677EE3-8809-4981-A7BC-CE7AD9B27F44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{653197BA-D5AB-4CF0-8DD4-37E45B7E1BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{653197BA-D5AB-4CF0-8DD4-37E45B7E1BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{653197BA-D5AB-4CF0-8DD4-37E45B7E1BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E677EE3-8809-4981-A7BC-CE7AD9B27F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E677EE3-8809-4981-A7BC-CE7AD9B27F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E677EE3-8809-4981-A7BC-CE7AD9B27F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E677EE3-8809-4981-A7BC-CE7AD9B27F44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

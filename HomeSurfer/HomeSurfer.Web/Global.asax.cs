@@ -23,6 +23,7 @@ namespace HomeSurfer.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+            CustomGlobalConfig.Customize(GlobalConfiguration.Configuration);
         }
     }
 }

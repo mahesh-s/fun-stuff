@@ -17,13 +17,12 @@ namespace Data.Configuration
             this.Property(p => p.LastName).HasMaxLength(100);
             this.Property(p => p.UserName).HasMaxLength(100);
 
-            this.HasMany(a => a.Roles)
-                .WithMany(b => b.Users).Map(m =>
-                {
-                    m.MapLeftKey("UserId");
-                    m.MapRightKey("RoleId");
-                    m.ToTable("webpages_UsersInRoles");
-                });
+            this.HasMany(a => a.Roles).WithMany(b => b.Users).Map(m =>
+            {
+                m.MapLeftKey("UserId");
+                m.MapRightKey("RoleId");
+                m.ToTable("webpages_UsersInRoles");
+            });
         }
     }
 }

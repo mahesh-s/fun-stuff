@@ -59,5 +59,22 @@ namespace HomeSurfer.Web.App_Start
                 return "Username";
             }
         }
+
+        public static string ImagesUrlPrefix
+        {
+            get { return ImagesFolderPath.Replace("~", ""); }
+        }
+
+        public static string ImagesFolderPath
+        {
+            get
+            {
+                if (ConfigurationManager.AppSettings["ImagesFolderPath"] != null)
+                {
+                    return ConfigurationManager.AppSettings["ImagesFolderPath"].ToString();
+                }
+                return "~/img/homes";
+            }
+        }
     }
 }

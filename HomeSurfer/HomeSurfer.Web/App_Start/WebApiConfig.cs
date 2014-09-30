@@ -9,6 +9,17 @@ namespace HomeSurfer.Web
     {
         public static void Register(HttpConfiguration config)
         {
+
+            config.Routes.MapHttpRoute(
+                name: "API",
+                routeTemplate: "api/homes/{id}",
+                defaults: new
+                {
+                    controller = "HomesAPI",
+                    id = RouteParameter.Optional
+                }
+             );
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

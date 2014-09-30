@@ -8,7 +8,7 @@ using HomeSurferModels;
 
 namespace Data.Configuration
 {
-    public class CustomDatabaseInitializer : DropCreateDatabaseIfModelChanges<DataContext>
+    public class CustomDatabaseInitializer : DropCreateDatabaseAlways<DataContext>
     {
         protected override void Seed(DataContext context)
         {

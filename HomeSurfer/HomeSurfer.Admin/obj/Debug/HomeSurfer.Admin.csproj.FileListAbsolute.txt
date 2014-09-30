@@ -1,0 +1,7 @@
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\bin\HomeSurfer.Admin.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\bin\HomeSurfer.Admin.pdb
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\bin\EntityFramework.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\bin\EntityFramework.xml
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\obj\Debug\HomeSurfer.Admin.csprojResolveAssemblyReference.cache
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\obj\Debug\HomeSurfer.Admin.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Admin\obj\Debug\HomeSurfer.Admin.pdb

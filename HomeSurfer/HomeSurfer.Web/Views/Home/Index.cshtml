@@ -1,44 +1,122 @@
 ﻿@{
     ViewBag.Title = "Home Page";
-    
+    ViewBag.IncludeManifest = true;
 }
+
 @section styles {
     <style>
         .jumbotron {
             margin: 80px 0;
             text-align: center;
         }
-        .jumbotron h1 {
-            font-size: 7em;
-            line-height: 1;
-        }
-        .jumbotron .lead {
-            font-size: 24px;
-            line-height: 1.25;
-        }
-        .jumbotron .btn {
-            font-size: 21px;
-            padding: 14px 24px;
+
+            .jumbotron h1 {
+                font-size: 7em;
+                line-height: 1;
+            }
+
+            .jumbotron .lead {
+                font-size: 24px;
+                line-height: 1.25;
+            }
+
+            .jumbotron .btn {
+                font-size: 21px;
+                padding: 14px 24px;
+            }
+
+
+
+
+
+        .myButton {
+            -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+            box-shadow: inset 0px 1px 0px 0px #ffffff;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+            background: -moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background: -o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background: -ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+            background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+            background-color: #f9f9f9;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            border: 1px solid #dcdcdc;
+            display: inline-block;
+            cursor: pointer;
+            color: #666666;
+            font-family: arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
         }
 
-        header img[alt="HomeSurfer"] {
-            display:none;
+            .myButton:hover {
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+                background: -moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+                background: -webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+                background: -o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+                background: -ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+                background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+                background-color: #e9e9e9;
+            }
+
+            .myButton:active {
+                position: relative;
+                top: 1px;
+            }
+
+
+
+        header img[alt="Home Surfer"] {
+            display: none;
         }
     </style>
 }
 
-  <div class="container">
-    <div class="jumbotron">
-        <div><img src="~/img/HomeSurferLogo.png" /></div>
-        <p class="lead">The leader in imaginary Illinois homes.</p>
+@section scripts {
+    <script>
+        $(function () {
 
-        <div class="online deferred">
-            <a class="btn btn-large" href="/homes">View Our Homes</a>
-            <a class="btn btn-large" href="/homes/new">Add a New Home</a>
+            var
+                showOnlineLayout = function () {
+                    $('.offline').fadeOut(function () {
+                        $('.online').fadeIn();
+                    });
+                },
+
+                showOfflineLayout = function () {
+                    $('.online').fadeOut(function () {
+                        $('.offline').fadeIn();
+                    });
+                };
+
+            var offlineUtility = new OfflineUtility(showOnlineLayout, showOfflineLayout);
+        });
+
+    </script>
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <div>
+            <img width="700px" src="~/img/home-surfer-large.png" />
+        </div>
+        <p class="lead">The leader in imaginary Illinois homes.</p>
+        
+  <div class="online deferred">
+            <a class="btn myButton" href="/homes">View Our Homes</a>
+            <a class="btn myButton" href="/homes/new">Add a New Home</a>
         </div>
 
-@*        <div class="offline deferred">
-            <a class="btn btn-large" href="/homes/offline">Add a New Home</a>
-        </div>*@
+         <div class="offline deferred">
+            <a class="btn myButton" href="/homes/offline">Add a New Home</a>
+        </div>
     </div>
 </div>

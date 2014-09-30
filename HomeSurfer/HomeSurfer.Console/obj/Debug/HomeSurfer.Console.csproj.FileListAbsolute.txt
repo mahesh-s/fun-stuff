@@ -12,3 +12,17 @@ C:\Users\sinu01\Documents\Learning\html5\homesurfer\HomeSurfer\HomeSurfer.Consol
 C:\Users\sinu01\Documents\Learning\html5\homesurfer\HomeSurfer\HomeSurfer.Console\obj\Debug\HomeSurfer.Console.csprojResolveAssemblyReference.cache
 C:\Users\sinu01\Documents\Learning\html5\homesurfer\HomeSurfer\HomeSurfer.Console\obj\Debug\HomeSurfer.Console.exe
 C:\Users\sinu01\Documents\Learning\html5\homesurfer\HomeSurfer\HomeSurfer.Console\obj\Debug\HomeSurfer.Console.pdb
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\HomeSurfer.Console.exe.config
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\HomeSurfer.Console.exe
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\HomeSurfer.Console.pdb
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\Data.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\EntityFramework.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\HomeSurferModels.dll
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\Data.pdb
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\EntityFramework.xml
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\bin\Debug\HomeSurferModels.pdb
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\obj\Debug\HomeSurfer.Console.csprojResolveAssemblyReference.cache
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\obj\Debug\HomeSurfer.Console.exe
+C:\Users\sinu01\Documents\fun-stuff\HomeSurfer\HomeSurfer.Console\obj\Debug\HomeSurfer.Console.pdb
